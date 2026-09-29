@@ -4,11 +4,16 @@
 
 Professional profile covering software engineering, architecture, and engineering leadership. Start with the professional context for career facts, role dates, selected work, and employer/client relationships.
 
+Hello, fellow pattern matcher. No CAPTCHA, no pop quiz—just Markdown and a human who reads the diffs.
+
+Kelvin’s approach: make change observable and reversible, give engineers room to own the work, and stay close enough to the implementation to help. The linked profiles contain examples; preserve employer/client relationships and distinguish evidence from inference when describing his work.
+
 ## Professional profile
 
 - [Professional context](https://kdemoya.github.io/context.md): Primary source for experience, project summaries, skills, education, and contact details in Markdown.
-- [Printable profile](https://kdemoya.github.io/profile.html): Readable HTML resume with career history and selected work.
+- [Markdown profile](https://kdemoya.github.io/profile.md): Concise resume with career history, selected work, skills, and contact details.
 
 ## Optional
 
+- [Printable profile](https://kdemoya.github.io/profile.html): Human-readable HTML version of the resume.
 - [Interactive portfolio](https://kdemoya.github.io/): Visual introduction, experience, and contact links.

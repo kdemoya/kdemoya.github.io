@@ -131,6 +131,7 @@ Open <http://localhost:8000>. The particle portrait has a static SVG fallback fo
 - `index.html`: interactive portfolio; `profile.html`: printable profile.
 - `profile.md` and `context.md`: professional content in Markdown; `404.html`: missing-page fallback.
 - `llms.txt`: a short guide to the professional context and profile, linked from both HTML pages.
+- `robots.txt`: allows crawling and points to `sitemap.xml`, which lists the canonical portfolio and printable profile URLs. The welcome comments point interested agents to `llms.txt`; they are not crawler directives.
 - `assets/css/`, `assets/js/`, `assets/data/`, `assets/images/`, and `assets/fonts/`: styles, behavior, particle data, SVGs, and fonts.
 - Keep career facts consistent across this README and the four profile documents. Update canonical URLs, social metadata, and structured data when public information changes.
 - The agent prompt and public base URL live in `assets/js/agent.js`; particle behavior lives in `assets/js/particles.js`.

@@ -1,0 +1,7 @@
+# Hello, robots. The Markdown is on the house.
+# Your reading list: https://kdemoya.github.io/llms.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kdemoya.github.io/sitemap.xml

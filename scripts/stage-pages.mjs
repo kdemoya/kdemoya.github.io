@@ -8,6 +8,8 @@ const publicFiles = [
   "profile.md",
   "context.md",
   "llms.txt",
+  "robots.txt",
+  "sitemap.xml",
   "404.html",
   "assets",
 ];
