@@ -26,11 +26,7 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Stage public files
-        run: |
-          mkdir _site
-          cp index.html profile.html profile.md context.md llms.txt 404.html _site/
-          cp -R assets _site/assets
-          touch _site/.nojekyll
+        run: node scripts/stage-pages.mjs
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:

@@ -86,7 +86,7 @@ Wistia
 
 I led a search-data integrity initiative that combined sampled monitoring, automated repair, and account-safe indexing. It made consistency something we could observe and maintain as the product changed.
 
-[Project summaries in the plain profile](https://kdemoya.github.io/me/profile.html#selected-work)
+[Project summaries in the plain profile](https://kdemoya.github.io/profile.html#selected-work)
 
 ### Private libraries inside a shared platform
 
@@ -94,7 +94,7 @@ Wistia
 
 I led technical scoping and initial implementation for My Library, carrying private-content rules through authorization, queries, search, and APIs while working within an existing collaboration model.
 
-[Project summaries in the plain profile](https://kdemoya.github.io/me/profile.html#selected-work)
+[Project summaries in the plain profile](https://kdemoya.github.io/profile.html#selected-work)
 
 ### A common GraphQL API
 
@@ -102,7 +102,7 @@ Beachbody, through X-Team
 
 I architected and led a federated GraphQL gateway for independently owned services. I also led the primary API’s move from REST to GraphQL and added caching that reduced repeated upstream work.
 
-[Project summaries in the plain profile](https://kdemoya.github.io/me/profile.html#selected-work)
+[Project summaries in the plain profile](https://kdemoya.github.io/profile.html#selected-work)
 
 ### From prototype to self-service recovery
 
@@ -110,7 +110,7 @@ Wistia
 
 I took a hackathon prototype into production so customers could recover media, folders, and channels themselves.
 
-[Project summaries in the plain profile](https://kdemoya.github.io/me/profile.html#selected-work)
+[Project summaries in the plain profile](https://kdemoya.github.io/profile.html#selected-work)
 
 ### Helping engineers adopt AI
 
@@ -118,7 +118,7 @@ Wistia
 
 I helped engineers bring AI into everyday development through discussion, open demonstrations, individual coaching, and working prototypes. I shared what worked, what failed, and how I reviewed the results.
 
-[Project summaries in the plain profile](https://kdemoya.github.io/me/profile.html#selected-work)
+[Project summaries in the plain profile](https://kdemoya.github.io/profile.html#selected-work)
 
 ## Skills
 
@@ -151,10 +151,10 @@ Pontificia Universidad Católica Madre y Maestra
 
 ## Public profile links
 
-- [Plain HTML profile](https://kdemoya.github.io/me/profile.html)
-- [Markdown profile](https://kdemoya.github.io/me/profile.md)
-- [Portfolio](https://kdemoya.github.io/me/)
-- [Career history](https://kdemoya.github.io/me/#experience-title)
-- [Skills](https://kdemoya.github.io/me/#toolbox-title)
+- [Plain HTML profile](https://kdemoya.github.io/profile.html)
+- [Markdown profile](https://kdemoya.github.io/profile.md)
+- [Portfolio](https://kdemoya.github.io/)
+- [Career history](https://kdemoya.github.io/#experience-title)
+- [Skills](https://kdemoya.github.io/#toolbox-title)
 
 Profile links point to Kelvin's public site.

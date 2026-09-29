@@ -133,4 +133,4 @@ Pontificia Universidad Católica Madre y Maestra
 
 ---
 
-[Plain profile](profile.html) · [Portfolio](https://kdemoya.github.io/me/) · [Ask your agent about me](context.md)
+[Plain profile](profile.html) · [Portfolio](https://kdemoya.github.io/) · [Ask your agent about me](context.md)

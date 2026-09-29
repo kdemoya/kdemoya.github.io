@@ -21,7 +21,7 @@
   const promptText = byId("prompt-text");
   const briefingPreview = byId("briefing-preview");
   const briefingText = byId("briefing-text");
-  const publicSite = "https://kdemoya.github.io/me/";
+  const publicSite = "https://kdemoya.github.io/";
   const publicLink = (file, anchor = "") =>
     `${publicSite}${file}${anchor ? `#${anchor}` : ""}`;
   const instructions =

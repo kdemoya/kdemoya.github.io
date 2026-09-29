@@ -6,9 +6,9 @@ Professional profile covering software engineering, architecture, and engineerin
 
 ## Professional profile
 
-- [Professional context](https://kdemoya.github.io/me/context.md): Primary source for experience, project summaries, skills, education, and contact details in Markdown.
-- [Printable profile](https://kdemoya.github.io/me/profile.html): Readable HTML resume with career history and selected work.
+- [Professional context](https://kdemoya.github.io/context.md): Primary source for experience, project summaries, skills, education, and contact details in Markdown.
+- [Printable profile](https://kdemoya.github.io/profile.html): Readable HTML resume with career history and selected work.
 
 ## Optional
 
-- [Interactive portfolio](https://kdemoya.github.io/me/): Visual introduction, experience, and contact links.
+- [Interactive portfolio](https://kdemoya.github.io/): Visual introduction, experience, and contact links.

@@ -3,7 +3,7 @@
 **Staff Engineer / Engineering Manager**  
 Fully remote · EST
 
-[Portfolio](https://kdemoya.github.io/me/) · [Printable profile](https://kdemoya.github.io/me/profile.html) · [Context for your agent](https://kdemoya.github.io/me/context.md)
+[Portfolio](https://kdemoya.github.io/) · [Printable profile](https://kdemoya.github.io/profile.html) · [Context for your agent](https://kdemoya.github.io/context.md)
 
 I build APIs, content systems, and the teams behind them. Over **14+ years**, my work has spanned search reliability, permissions, platform architecture, mobile experiences, and AI-powered metadata.
 
@@ -127,6 +127,7 @@ Open <http://localhost:8000>. The particle portrait has a static SVG fallback fo
 
 ### Content and assets
 
+- `github-profile/`: ready-to-publish GitHub profile README and responsive SVG banners. See [setup and editing](docs/github-profile.md).
 - `index.html`: interactive portfolio; `profile.html`: printable profile.
 - `profile.md` and `context.md`: professional content in Markdown; `404.html`: missing-page fallback.
 - `llms.txt`: a short guide to the professional context and profile, linked from both HTML pages.
@@ -144,6 +145,8 @@ Fira Code and Space Grotesk are self-hosted under the SIL Open Font License; the
 
 ### GitHub Pages
 
-The public URL is **https://kdemoya.github.io/me/**. In repository settings, choose **Pages → Source → GitHub Actions**. [The deployment workflow](.github/workflows/pages.yml) publishes on pushes to `main` and supports manual runs. It stages public pages and assets, excluding repository documentation and generation scripts. Local asset links support the `/me/` project path.
+The public URL is **https://kdemoya.github.io/**, published from `kdemoya/kdemoya.github.io`. In repository settings, choose **Pages → Source → GitHub Actions**. [The deployment workflow](.github/workflows/pages.yml) publishes on pushes to `main` and supports manual runs. It stages public pages and assets, excluding repository documentation and generation scripts.
+
+Run `node scripts/stage-pages.mjs` to reproduce the deployment artifact in `_site/`. The staging script also preserves the previous `/me/` entry points: HTML pages redirect to the new address, retaining query strings and fragments when JavaScript is available, and Markdown/text profiles remain readable at their old URLs. The 404 page links back to the domain root.
 
 </details>
