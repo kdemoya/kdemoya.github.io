@@ -1,0 +1,14 @@
+# Kelvin De Moya
+
+> Staff Engineer / Engineering Manager. Fully remote · EST.
+
+Professional profile covering software engineering, architecture, and engineering leadership. Start with the professional context for career facts, role dates, selected work, and employer/client relationships.
+
+## Professional profile
+
+- [Professional context](https://kdemoya.github.io/me/context.md): Primary source for experience, project summaries, skills, education, and contact details in Markdown.
+- [Printable profile](https://kdemoya.github.io/me/profile.html): Readable HTML resume with career history and selected work.
+
+## Optional
+
+- [Interactive portfolio](https://kdemoya.github.io/me/): Visual introduction, experience, and contact links.

@@ -28,7 +28,7 @@ jobs:
       - name: Stage public files
         run: |
           mkdir _site
-          cp index.html profile.html profile.md context.md 404.html _site/
+          cp index.html profile.html profile.md context.md llms.txt 404.html _site/
           cp -R assets _site/assets
           touch _site/.nojekyll
       - name: Upload site
