@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171815" />
+    <meta
+      name="description"
+      content="Kelvin De Moya — Staff Engineer / Engineering Manager. 14+ years building APIs, reliable content systems, and engineering teams. Fully remote · EST."
+    />
+    <link rel="canonical" href="https://kdemoya.github.io/me/" />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Kelvin De Moya" />
+    <meta
+      property="og:title"
+      content="Kelvin De Moya — Staff Engineer / Engineering Manager"
+    />
+    <meta
+      property="og:description"
+      content="14+ years building APIs, reliable content systems, and engineering teams. Fully remote · EST."
+    />
+    <meta property="og:url" content="https://kdemoya.github.io/me/" />
+    <meta name="twitter:card" content="summary" />
+    <title>Kelvin De Moya — Staff Engineer / Engineering Manager</title>
+    <link
+      rel="alternate"
+      type="text/markdown"
+      href="./profile.md"
+      title="Plain profile"
+    />
+    <link
+      rel="alternate"
+      type="text/markdown"
+      href="./context.md"
+      title="Career context for AI tools"
+    />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+    <link rel="stylesheet" href="./assets/css/agent.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "url": "https://kdemoya.github.io/me/",
+        "name": "Kelvin De Moya",
+        "jobTitle": "Staff Engineer / Engineering Manager",
+        "email": "kdemoya17@gmail.com",
+        "sameAs": ["https://www.linkedin.com/in/kdemoya/"],
+        "worksFor": { "@type": "Organization", "name": "Wistia" },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Pontificia Universidad Católica Madre y Maestra"
+        }
+      }
+    </script>
+    <script defer src="./assets/data/monogram.js"></script>
+    <script defer src="./assets/data/portrait.js"></script>
+    <script defer src="./assets/js/portrait-style.js"></script>
+    <script defer src="./assets/js/particles.js"></script>
+    <script defer src="./assets/js/agent.js"></script>
+    <script defer src="./assets/js/contact.js"></script>
+    <noscript
+      ><style>
+        #motion,
+        .signal {
+          display: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip" href="#about-title">Skip to about</a>
+    <canvas id="letter" aria-hidden="true"></canvas>
+    <main>
+      <section class="hero" id="top" aria-labelledby="name">
+        <div class="poster">
+          <div class="poster-grid" aria-hidden="true"></div>
+          <div class="margin-note" aria-hidden="true">
+            PEOPLE. SYSTEMS. A LITTLE CURIOSITY.
+          </div>
+          <h1 class="hero-identity" id="name">
+            <button
+              id="identity-trigger"
+              class="identity-trigger"
+              data-scatter
+              type="button"
+              aria-labelledby="hero-name"
+              aria-describedby="identity-hint"
+              disabled
+            >
+              <span id="hero-name" class="hero-name"
+                >Kelvin De Moya<span class="name-period">.</span></span
+              >
+            </button>
+          </h1>
+          <div id="hero-mark" class="mark" aria-hidden="true">
+            <img class="fallback" src="./assets/images/monogram.svg" alt="" />
+          </div>
+          <div class="hero-role">
+            <button
+              id="title-trigger"
+              class="identity-trigger role"
+              data-scatter
+              type="button"
+              aria-describedby="identity-hint"
+              disabled
+            >
+              <span
+                >Staff Engineer <span class="role-slash">/</span> Engineering
+                Manager</span
+              >
+            </button>
+          </div>
+          <span id="identity-hint" class="sr-only"
+            >Activate to scatter the dotted K.</span
+          >
+          <div class="signal" aria-hidden="true">
+            <span class="signal-dot"></span
+            ><span id="signal-label">FORM / INTACT</span>
+          </div>
+        </div>
+        <section
+          id="agent-invite"
+          class="agent-invite"
+          aria-labelledby="agent-heading"
+        >
+          <h2 id="agent-heading" class="sr-only">Ask your agent about me</h2>
+          <button
+            id="copy-prompt"
+            class="copy-prompt"
+            type="button"
+            disabled
+            aria-labelledby="agent-title copy-prompt-label"
+            aria-describedby="agent-description"
+          >
+            <span class="agent-copy">
+              <span id="agent-title" class="agent-title"
+                >Ask your agent<br class="agent-title-break" />about me<span
+                  >.</span
+                ></span
+              >
+              <span id="agent-description" class="agent-description"
+                >Paste the prompt into your agent. Bring a role, or just your
+                curiosity.</span
+              >
+            </span>
+            <span class="copy-cue"
+              ><span id="copy-prompt-label">Copy prompt</span
+              ><svg
+                class="copy-icon"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M8 8h12v13H8zM16 8V3H3v13h5" /></svg
+            ></span>
+          </button>
+          <p
+            id="copy-status"
+            class="copy-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <div class="agent-links">
+            <details id="prompt-preview" class="prompt-preview" hidden>
+              <summary>
+                Read the prompt <span aria-hidden="true">+</span>
+              </summary>
+              <label class="sr-only" for="prompt-text"
+                >Prompt for your agent</label
+              ><textarea
+                id="prompt-text"
+                readonly
+                rows="7"
+                spellcheck="false"
+              ></textarea>
+              <div class="agent-fallbacks">
+                <button id="copy-context" type="button" class="text-button">
+                  Copy full briefing</button
+                ><a href="./context.md" download="kelvin-de-moya-context.md"
+                  >Download profile</a
+                >
+              </div>
+              <p id="briefing-status" role="status" aria-live="polite"></p>
+              <details id="briefing-preview" hidden>
+                <summary>Full briefing</summary>
+                <label class="sr-only" for="briefing-text"
+                  >Prompt and professional profile</label
+                ><textarea
+                  id="briefing-text"
+                  readonly
+                  rows="10"
+                  spellcheck="false"
+                ></textarea>
+              </details>
+            </details>
+            <a class="agent-profile-link" href="./context.md"
+              >Read my profile <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </section>
+      </section>
+
+      <section
+        id="about"
+        class="about-section chapter"
+        aria-labelledby="about-title"
+      >
+        <div class="section-inner">
+          <div class="chapter-top">
+            <span class="folio">01 / THE PERSON</span
+            ><span class="folio">BEHIND THE WORK.</span>
+          </div>
+          <div class="about-reveal">
+            <div class="about-stage">
+              <h2 id="about-title" tabindex="-1">
+                A person<br />behind<br />the systems<span>.</span>
+              </h2>
+              <div class="portrait-column">
+                <div
+                  id="about-emblem"
+                  class="about-emblem"
+                  role="img"
+                  aria-label="Black-and-white sketch of Kelvin De Moya, drawn with dots and fine trails"
+                >
+                  <img
+                    class="static-portrait"
+                    src="./assets/images/portrait.svg"
+                    alt=""
+                    width="680"
+                    height="850"
+                  />
+                </div>
+                <nav class="portrait-links" aria-label="Connect with Kelvin">
+                  <a href="https://www.linkedin.com/in/kdemoya/">
+                    <span class="portrait-link-node" aria-hidden="true"></span>
+                    <span>Connect on LinkedIn</span>
+                    <span class="portrait-link-arrow" aria-hidden="true"
+                      >↗</span
+                    >
+                  </a>
+                  <a href="./profile.html">
+                    <span class="portrait-link-node" aria-hidden="true"></span>
+                    <span>Read the profile</span>
+                    <span class="portrait-link-arrow" aria-hidden="true"
+                      >↗</span
+                    >
+                  </a>
+                </nav>
+              </div>
+              <section
+                id="contact"
+                class="contact-section"
+                aria-labelledby="contact-title"
+              >
+                <h3 id="contact-title" class="sr-only">Start something</h3>
+                <div class="contact-slot">
+                  <a
+                    id="contact-cta"
+                    class="contact-cta"
+                    href="mailto:kdemoya17@gmail.com"
+                    aria-labelledby="contact-headline contact-action"
+                    aria-describedby="contact-description"
+                  >
+                    <span class="contact-copy">
+                      <span id="contact-headline" class="contact-headline"
+                        >Start something<span>.</span></span
+                      >
+                      <span id="contact-description" class="contact-description"
+                        >Have a product to build, a system to improve, or a team
+                        to lead?</span
+                      >
+                    </span>
+                    <span class="contact-cue"
+                      ><span id="contact-action">Shoot me an email</span
+                      ><svg
+                        class="contact-icon"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path d="M3 5h18v14H3zM3 5l9 8 9-8" /></svg
+                    ></span>
+                  </a>
+                </div>
+                <div class="contact-meta">
+                  <span id="contact-availability" class="folio"
+                    >FULLY REMOTE · EST</span
+                  >
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="about-grid">
+            <div class="about-note">
+              <h3>Hands on.<br />People in mind.</h3>
+              <p>
+                I’m Kelvin De Moya, a fully remote software engineer and
+                engineering leader. Over 14+ years, I’ve worked on APIs, search,
+                permissions, content platforms, and mobile experiences.
+              </p>
+              <p>
+                At Wistia, I progressed from Senior Software Engineer II to
+                Staff Software Engineer and Engineering Manager, combining
+                hands-on architecture with coaching and delivery. Earlier, I
+                worked with Beachbody and Riot Games through X-Team, and with
+                Condé Nast through Intellisys.
+              </p>
+              <p>
+                I use Claude Code and Codex across research, planning, and
+                implementation, with responsibility for architecture, review,
+                and validation staying with me. I’ve also helped engineers adopt
+                those workflows through open demonstrations, individual
+                coaching, and practical projects that connect new tools to real
+                work.
+              </p>
+              <a class="underlined" href="./profile.html"
+                >The plain version <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <aside class="about-aside" aria-labelledby="working-style">
+              <h3 id="working-style" class="folio">HOW I WORK</h3>
+              <dl class="working-notes">
+                <dt>Across the boundaries.</dt>
+                <dd>
+                  Connect APIs, permissions, search, and product behavior so the
+                  whole system makes sense.
+                </dd>
+                <dt>Make change reversible.</dt>
+                <dd>
+                  Build in monitoring, repair paths, and safe rollout as part of
+                  delivery.
+                </dd>
+                <dt>Make room for ownership.</dt>
+                <dd>
+                  Coach engineers, delegate initiatives, and stay available for
+                  technical and organizational blockers.
+                </dd>
+              </dl>
+            </aside>
+          </div>
+          <section class="career-history" aria-labelledby="experience-title">
+            <div class="content-heading">
+              <h3 id="experience-title">Experience</h3>
+              <span class="folio">BUILDING SINCE 2012</span>
+            </div>
+            <article class="career-employer">
+              <div class="career-heading">
+                <h4>Wistia</h4>
+                <p class="folio">MAY 2022–PRESENT</p>
+              </div>
+              <div class="career-roles">
+                <section class="career-role" aria-labelledby="manager-role">
+                  <h5 id="manager-role">Engineering Manager</h5>
+                  <p class="role-dates">March 2025–Present</p>
+                  <p>
+                    Coaching, growth planning, delegation, technical direction,
+                    and cross-team delivery, alongside hands-on implementation.
+                  </p>
+                  <ul>
+                    <li>
+                      Led technical scoping and initial implementation of
+                      private libraries across authorization, queries, search,
+                      and APIs.
+                    </li>
+                    <li>
+                      Delivered limited-access roles and self-service content
+                      recovery; designed and optimized AI metadata processing
+                      and backfills.
+                    </li>
+                    <li>
+                      Helped engineers adopt AI through practical
+                      demonstrations, individual coaching, and real projects.
+                    </li>
+                  </ul>
+                </section>
+                <section class="career-role" aria-labelledby="staff-role">
+                  <h5 id="staff-role">Staff Software Engineer</h5>
+                  <p class="role-dates">August 2024–March 2025</p>
+                  <p>
+                    Technical ownership across multi-account workspaces, search
+                    relevance, instrumentation, and content integrations.
+                  </p>
+                  <ul>
+                    <li>
+                      Owned backend integration and customer-support tooling for
+                      a workspace add-on, preserving free access for existing
+                      workspace customers.
+                    </li>
+                    <li>
+                      Led search-personalization investigation, implementation,
+                      and initial rollout; researched transcript-search
+                      feasibility and vendor constraints.
+                    </li>
+                  </ul>
+                </section>
+                <section class="career-role" aria-labelledby="senior-role">
+                  <h5 id="senior-role">Senior Software Engineer II</h5>
+                  <p class="role-dates">May 2022–August 2024</p>
+                  <p>
+                    Search architecture and reliability, data migrations,
+                    account-aware indexing, and full-stack content organization.
+                  </p>
+                  <ul>
+                    <li>
+                      Conceived and led sampled search-consistency monitoring
+                      and automated repair, with static-analysis guardrails for
+                      account-safe indexing.
+                    </li>
+                    <li>
+                      Built a reversible per-account search migration and
+                      contributed across subfolder migration, GraphQL, React,
+                      bulk operations, uploads, and navigation.
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </article>
+            <article class="career-employer">
+              <div class="career-heading">
+                <h4>X-Team</h4>
+                <p class="folio">NOVEMBER 2015–APRIL 2022</p>
+              </div>
+              <div class="career-roles">
+                <section class="career-role" aria-labelledby="beachbody-role">
+                  <h5 id="beachbody-role">
+                    Lead Software Engineer · Beachbody
+                  </h5>
+                  <p class="role-dates">Client assignment through X-Team</p>
+                  <p>
+                    Architected and led a federated GraphQL gateway, a
+                    REST-to-GraphQL migration, and runtime caching for
+                    independently owned services and multiple client teams.
+                    Re-architected core React surfaces to improve loading
+                    performance.
+                  </p>
+                </section>
+                <section class="career-role" aria-labelledby="riot-role">
+                  <h5 id="riot-role">Senior Software Engineer · Riot Games</h5>
+                  <p class="role-dates">Client assignment through X-Team</p>
+                  <p>
+                    Improved internal video and localization pipelines and built
+                    a React Native / Expo prototype later incorporated into
+                    production iOS and Android apps.
+                  </p>
+                </section>
+              </div>
+            </article>
+            <article class="career-employer">
+              <div class="career-heading">
+                <h4>Intellisys</h4>
+                <p class="folio">MARCH 2012–OCTOBER 2015</p>
+              </div>
+              <div class="career-roles">
+                <section class="career-role" aria-labelledby="conde-role">
+                  <h5 id="conde-role">Software Engineer · Condé Nast</h5>
+                  <p class="role-dates">Client assignment through Intellisys</p>
+                  <p>
+                    Worked remotely with several Condé Nast magazines on a
+                    replatforming initiative, rebuilding legacy web systems and
+                    shared functionality with Node.js and modern JavaScript.
+                  </p>
+                </section>
+              </div>
+            </article>
+          </section>
+          <section class="toolbox" aria-labelledby="toolbox-title">
+            <div class="content-heading">
+              <h3 id="toolbox-title">What I work with</h3>
+              <span class="folio">TOOLS & PRACTICE</span>
+            </div>
+            <dl class="skill-list">
+              <div>
+                <dt>Languages & interfaces</dt>
+                <dd>
+                  Ruby · Ruby on Rails · TypeScript · JavaScript · Node.js ·
+                  React · React Native · Expo · Next.js · SQL
+                </dd>
+              </div>
+              <div>
+                <dt>APIs & systems</dt>
+                <dd>
+                  REST · GraphQL · Federation · CMS integration · Authorization
+                  · Multi-tenant content systems · Algolia
+                </dd>
+              </div>
+              <div>
+                <dt>Delivery & reliability</dt>
+                <dd>
+                  Background processing · Observability · Static analysis ·
+                  RuboCop · AWS Lambda · Caching · Experimentation · Reversible
+                  migrations
+                </dd>
+              </div>
+              <div>
+                <dt>Engineering & leadership</dt>
+                <dd>
+                  Claude Code · Codex · Parallel-agent workflows · Architecture
+                  · Code review · Coaching · Delegation · Cross-team delivery
+                </dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer chapter">
+      <div class="section-inner">
+        <div class="colophon">
+          <span>Kelvin De Moya © 2026</span
+          ><a href="#top" class="back-top"
+            >BACK TO TOP <span aria-hidden="true">↑</span></a
+          ><a href="./profile.md">PLAIN TEXT ↗</a>
+        </div>
+      </div>
+    </footer>
+    <button id="motion" type="button" aria-pressed="true">
+      <span class="motion-dot" aria-hidden="true"></span
+      ><span id="motion-label">MOTION ON</span>
+    </button>
+  </body>
+</html>

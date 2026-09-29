@@ -1,0 +1,302 @@
+.agent-invite {
+  position: relative;
+  z-index: 3;
+  padding: 0 0 12px;
+  background: var(--bg);
+}
+.copy-prompt {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 4vw;
+  width: 100%;
+  padding: 24px clamp(22px, 3vw, 42px);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--ink);
+  box-shadow: inset 5px 0 0 var(--accent);
+  color: var(--bg);
+  text-align: left;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+.copy-prompt:enabled:hover,
+.copy-prompt:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: inset 5px 0 0 var(--bg);
+}
+.copy-prompt:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 6px;
+}
+.copy-prompt:enabled:active {
+  background: var(--accent-active);
+}
+.copy-prompt:disabled {
+  opacity: 1;
+}
+.agent-copy {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 4vw, 65px);
+  min-width: 0;
+}
+.agent-title {
+  display: block;
+  flex-shrink: 0;
+  max-width: 100%;
+  font: 500 clamp(32px, 3.4vw, 50px)/0.98 var(--sans);
+  letter-spacing: -0.055em;
+  transition: color 0.2s;
+}
+.agent-title > span {
+  color: var(--accent);
+}
+.agent-description {
+  display: block;
+  max-width: 32ch;
+  color: #4c4f43;
+  font: 11px/1.9 var(--mono);
+  transition: color 0.2s;
+}
+.copy-cue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  min-height: 48px;
+  padding: 13px 18px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 500 12px/1.5 var(--mono);
+}
+#copy-prompt-label {
+  min-width: 11ch;
+}
+.copy-icon {
+  flex-shrink: 0;
+  color: var(--accent);
+  transition: transform 0.2s;
+}
+.copy-prompt:enabled:hover .agent-title > span,
+.copy-prompt:focus-visible .agent-title > span {
+  color: var(--bg);
+}
+.copy-prompt:enabled:hover .agent-description,
+.copy-prompt:focus-visible .agent-description {
+  color: var(--bg);
+}
+.copy-prompt:enabled:hover .copy-icon,
+.copy-prompt:focus-visible .copy-icon {
+  transform: translateY(-2px);
+}
+.copy-prompt:disabled .copy-cue {
+  visibility: hidden;
+}
+.copy-status {
+  min-height: 1.7em;
+  margin: 7px 0 0;
+  color: var(--muted);
+  font: 9px/1.7 var(--mono);
+}
+.agent-links {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px 28px;
+}
+.agent-profile-link {
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  font: 10px/1.7 var(--mono);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 3px;
+}
+.agent-profile-link > span {
+  color: var(--accent);
+  font: 17px/1 var(--sans);
+}
+.agent-profile-link:hover {
+  border-color: var(--accent);
+}
+.prompt-preview {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+}
+.prompt-preview > summary,
+#briefing-preview > summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: max-content;
+  max-width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+  list-style: none;
+  color: var(--muted);
+  font: 9px/1.7 var(--mono);
+}
+.prompt-preview > summary::-webkit-details-marker,
+#briefing-preview > summary::-webkit-details-marker {
+  display: none;
+}
+.prompt-preview > summary > span,
+#briefing-preview > summary > span {
+  font: 20px/1 var(--sans);
+  color: var(--accent);
+  transition: transform 0.2s;
+}
+.prompt-preview > summary:hover,
+#briefing-preview > summary:hover {
+  color: var(--ink);
+}
+.prompt-preview[open] > summary > span,
+#briefing-preview[open] > summary > span {
+  transform: rotate(45deg);
+}
+.prompt-preview textarea {
+  display: block;
+  resize: vertical;
+  width: 100%;
+  max-width: 100%;
+  min-height: 180px;
+  margin: 12px 0 0;
+  padding: 18px;
+  border: 1px solid #606354;
+  border-radius: 0;
+  background: #20221d;
+  color: var(--ink);
+  font: 11px/1.9 var(--mono);
+}
+.agent-fallbacks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+  margin-top: 16px;
+}
+.agent-fallbacks a,
+.agent-fallbacks .text-button {
+  font: 10px/1.7 var(--mono);
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.agent-fallbacks .text-button {
+  padding: 6px 0;
+  background: none;
+  border: 0;
+  text-align: left;
+}
+.agent-fallbacks a:hover,
+.agent-fallbacks .text-button:hover {
+  color: var(--ink);
+}
+#briefing-preview {
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 6px;
+}
+#briefing-preview textarea {
+  min-height: 260px;
+}
+#briefing-status {
+  color: var(--muted);
+  font: 10px/1.7 var(--mono);
+  margin: 14px 0 4px;
+}
+@media (max-width: 1100px) {
+  .copy-prompt {
+    gap: 24px;
+  }
+  .agent-copy {
+    gap: 24px;
+  }
+  .agent-description {
+    max-width: 27ch;
+    font-size: 10px;
+  }
+}
+@media (max-width: 850px) {
+  .agent-copy {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .agent-description {
+    max-width: 40ch;
+  }
+}
+@media (max-width: 700px) {
+  .agent-invite {
+    padding-bottom: 14px;
+  }
+  .copy-prompt {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    padding: 22px 20px;
+  }
+  .agent-title {
+    font-size: clamp(28px, 9vw, 36px);
+  }
+  .agent-description {
+    max-width: 38ch;
+    font-size: 10px;
+  }
+  .copy-cue {
+    justify-self: stretch;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+  .agent-links {
+    gap: 12px 20px;
+  }
+  .agent-profile-link {
+    font-size: 9px;
+    gap: 8px;
+  }
+  .prompt-preview[open] {
+    grid-column: 1/-1;
+  }
+  .prompt-preview > summary {
+    max-width: calc(100vw - 185px);
+  }
+  .prompt-preview textarea {
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 12px;
+    min-height: 260px;
+  }
+  .agent-fallbacks {
+    gap: 14px 22px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .copy-prompt,
+  .agent-title,
+  .agent-description,
+  .copy-icon,
+  .prompt-preview > summary > span {
+    transition: none;
+  }
+  .copy-prompt:enabled:hover .copy-icon,
+  .copy-prompt:focus-visible .copy-icon {
+    transform: none;
+  }
+}
+@media print {
+  .agent-invite {
+    display: none;
+  }
+}

@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/fira-code.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #272723;
+  background: #f3f0e8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --muted: #6b695f;
+  --rule: #d1cec4;
+  --mono: "Fira Code", ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-underline-offset: 0.22em;
+  overflow-wrap: anywhere;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+:target {
+  scroll-margin-top: 28px;
+}
+.page {
+  width: min(100% - 48px, 760px);
+  margin: 0 auto;
+}
+.skip-link {
+  position: absolute;
+  top: -80px;
+  left: 24px;
+  padding: 12px;
+  background: #fff;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.view-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+}
+.label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.profile-header {
+  padding: 64px 0 32px;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(40px, 7.5vw, 68px);
+  font-weight: 550;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.role {
+  margin: 20px 0 0;
+  font-family: var(--mono);
+  font-size: clamp(16px, 3.3vw, 20px);
+  letter-spacing: -0.015em;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+.location {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin-top: 30px;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.7;
+}
+section {
+  padding: 34px 0 40px;
+  border-top: 1px solid var(--rule);
+}
+h2 {
+  margin: 0 0 24px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+p + p {
+  margin-top: 16px;
+}
+ul {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+li {
+  padding-left: 4px;
+  font-size: 15px;
+  line-height: 1.75;
+}
+li + li {
+  margin-top: 9px;
+}
+.employer + .employer {
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+}
+.position {
+  margin-top: 24px;
+}
+.meta {
+  margin: 6px 0 0;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.work-item + .work-item {
+  margin-top: 30px;
+}
+.work-item > p:last-child {
+  margin-top: 12px;
+}
+.skill-list {
+  margin: 0;
+}
+.skill-list dt {
+  margin-top: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.skill-list dt:first-child {
+  margin-top: 0;
+}
+.skill-list dd {
+  margin: 5px 0 0;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.education-school {
+  margin-top: 7px;
+  color: var(--muted);
+}
+address {
+  font-style: normal;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 26px 0 40px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+}
+footer p,
+footer a {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+@media (max-width: 480px) {
+  .page {
+    width: calc(100% - 40px);
+  }
+  .view-nav {
+    padding: 24px 0;
+  }
+  .profile-header {
+    padding: 48px 0 28px;
+  }
+  section {
+    padding: 28px 0 34px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+@media print {
+  :root {
+    color: #000;
+    background: #fff;
+    --muted: #444;
+    --rule: #bbb;
+  }
+  .page {
+    width: 100%;
+    max-width: none;
+  }
+  .view-nav,
+  .section-nav,
+  .skip-link,
+  footer {
+    display: none;
+  }
+  .profile-header {
+    padding: 0 0 24px;
+  }
+  h1 {
+    font-size: 32pt;
+  }
+  .role {
+    font-size: 13pt;
+  }
+  .location {
+    font-size: 10pt;
+  }
+  section {
+    padding: 20px 0;
+  }
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+  h2 {
+    font-size: 16pt;
+  }
+  h3 {
+    font-size: 13pt;
+  }
+  h4 {
+    font-size: 11pt;
+  }
+  p,
+  li,
+  .skill-list dt,
+  .skill-list dd {
+    font-size: 10pt;
+    orphans: 3;
+    widows: 3;
+  }
+  .meta {
+    font-size: 9pt;
+  }
+  .position,
+  .work-item {
+    break-inside: avoid;
+  }
+  a {
+    text-decoration: none;
+  }
+  #contact a[href^="https:"]::after {
+    content: " (" attr(href) ")";
+  }
+  @page {
+    margin: 18mm;
+  }
+}
